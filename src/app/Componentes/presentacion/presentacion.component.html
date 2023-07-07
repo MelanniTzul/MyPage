@@ -1,0 +1,23 @@
+
+<div class="flex justify-content-around w-full align-items-center">
+
+  <div class="w-8 h-4rem">
+    <h5 class="line-height-2 text-5xl font-bold p-5 my-7  text-justify white-space-normal ">{{l}}</h5>
+    <h1 class="text-justify white-space-normal "> {{longText}}</h1>
+  </div>
+
+  <div class="w-2">
+    <li class="list-none" *ngFor="let item of foto">
+       <img class="w-full"  [src]="item.imagen">
+  </li>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
