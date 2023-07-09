@@ -1,16 +1,25 @@
 
-<div class="flex justify-content-around w-full align-items-center">
+<div class="flex justify-content-evenly   align-items-center my-8 mr-2 ml-2 ">
 
-  <div class="w-8 h-4rem">
-    <h5 class="line-height-2 text-5xl font-bold p-5 my-7  text-justify white-space-normal ">{{l}}</h5>
+  <div class="w-6 h-1rem ml-8 ">
+    <h5 class="line-height-2 text-5xl font-bold  text-justify white-space-normal ">{{l}}</h5>
     <h1 class="text-justify white-space-normal "> {{longText}}</h1>
+
+    <div class="flex justify-content-center w-30rem">
+
+      <button class="text-xl" mat-button color="primary">Github</button>
+      <button class="text-xl" mat-button color="primary">Linkedin</button>
+      <button class="text-xl" mat-button color="primary">Instagram</button>
+      <button class="text-xl"  mat-button color="primary">Facebook</button>
+    </div>
+
   </div>
 
-  <div class="w-2">
-    <li class="list-none" *ngFor="let item of foto">
-       <img class="w-full"  [src]="item.imagen">
-  </li>
+  <div class=" h-10rem mr-8  ">
+     <img  class="border-circle w-30rem h-30rem ml-0 bg-contain" mat-card-image  [src]="foto"  alt="Imagen ">
   </div>
+
+
 </div>
 
 

@@ -1,4 +1,4 @@
 export interface Datos {
 
-imagen:string;
+imagen?:string;
 }

@@ -1,20 +1,29 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import {Datos} from 'src/app/interface';
+import { ImagePipe } from "../../pipes/image.pipe";
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
 @Component({
-  selector: 'presentacion',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatCardModule
-    ],
-  templateUrl: './presentacion.component.html',
+    selector: 'presentacion',
+    standalone: true,
+    templateUrl: './presentacion.component.html',
+    imports: [
+        CommonModule,
+        MatCardModule,
+        ImagePipe,
+        MatButtonModule,
+        MatIconModule
+
+    ]
 })
-export class PresentacionComponent {
+export class PresentacionComponent  {
+
+
   longText=`Actualmente soy estudiante de Ingeniería en ciencias y sitemas en la Universidad San Carlos de Guatemala cursando el 6to Semestre,
   también estudie en el Programa Oracle Next Education impulsado por Oracle y Alura Latam.
 
@@ -22,22 +31,20 @@ export class PresentacionComponent {
 
   l=`👋 Hola, mi nombre es Melanni del Rosario Tzul Baquiax, me dedico a la programación y también proporciono asistencia técnica.`;
 
-  foto:Datos[];
+ //Poder mandar el dato
+ @Input() public f!: Datos;
+
+
+
+  foto:string;
 
 
  constructor(){
-  this.foto=[];
+  this.foto="";
   this.charguefoto();
 }
 
 charguefoto(){
-let fotopersonal: Datos = {
-  imagen:'./src/assets/imagenes/dc-wonder.jpg'
+  this.foto='./assets/imagenes/Mel.JPG'
 }
-
-this.foto.push(fotopersonal);
-}
-
-
-
 }
