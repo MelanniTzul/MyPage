@@ -1,8 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
-import {Datos} from 'src/app/interface';
-import { ImagePipe } from "../../pipes/image.pipe";
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -15,7 +13,6 @@ import { MatIconModule } from '@angular/material/icon';
     imports: [
         CommonModule,
         MatCardModule,
-        ImagePipe,
         MatButtonModule,
         MatIconModule
 
@@ -29,14 +26,10 @@ export class PresentacionComponent  {
 
   Creo en mis capacidades, me gusta aprender, siempre es bueno adquirir nuevas competencias.`;
 
-  l=`👋 Hola, mi nombre es Melanni del Rosario Tzul Baquiax, me dedico a la programación y también proporciono asistencia técnica.`;
-
- //Poder mandar el dato
- @Input() public f!: Datos;
+  l=`👋🏻 Hola, mi nombre es Melanni del Rosario Tzul Baquiax, me dedico a la programación y también proporciono asistencia técnica.`;
 
 
-
-  foto:string;
+   foto:string;
 
 
  constructor(){
@@ -45,6 +38,22 @@ export class PresentacionComponent  {
 }
 
 charguefoto(){
-  this.foto='./assets/imagenes/Mel.JPG'
+  this.foto='./assets/imagenes/Mel.png'
 }
+
+goGitHub() {
+  window.location.href = 'https://github.com/MelanniTzul'; // Reemplaza con la URL a la que deseas redirigir
+ }
+
+ goFace(){
+  window.location.href='https://www.facebook.com/melannitzul/';
+ }
+
+
+ goInsta(){
+  window.location.href='https://www.instagram.com/melannitzul/';
+ }
+ goLinkedin(){
+  window.location.href='https://www.linkedin.com/in/melannitzul/';
+ }
 }
