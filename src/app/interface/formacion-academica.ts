@@ -1,4 +1,5 @@
 export interface FormacionAcademica {
   url:string,
-  name:string
+  title:string,
+  subtitle:string
 }

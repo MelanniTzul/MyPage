@@ -11,6 +11,10 @@ import { SobremiComponent } from "./Componentes/sobremi/sobremi.component";
 import { SkillsComponent } from "./Componentes/skills/skills.component";
 import { HobbiesComponent } from "./Componentes/hobbies/hobbies.component";
 import { FormacionAcademicaComponent } from './Componentes/formacion-academica/formacion-academica.component';
+import { ExperienciaProfesionalComponent } from './Componentes/experiencia-profesional/experiencia-profesional.component';
+import { ContactoComponent } from './Componentes/contacto/contacto.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
     declarations: [
@@ -30,7 +34,11 @@ import { FormacionAcademicaComponent } from './Componentes/formacion-academica/f
         SobremiComponent,
         SkillsComponent,
         HobbiesComponent,
-        FormacionAcademicaComponent
+        FormacionAcademicaComponent,
+        ExperienciaProfesionalComponent,
+        ContactoComponent,
+        BrowserAnimationsModule
+
     ]
 })
 export class AppModule { }

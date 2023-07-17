@@ -19,17 +19,15 @@ export class FormacionAcademicaComponent {
   }
 
  cargarDatos(){
-  let formacion1:FormacionAcademica={url:'./assets/formacion/usac1.png', name:'Ingenieria en Sistemas'}
-  let formacion2:FormacionAcademica={url:'./assets/formacion/ONE.png', name:'Oracle Next Education'}
-  let formacion3:FormacionAcademica={url:'./assets/formacion/sigel.png', name:'Jab Academy'}
-  let formacion4:FormacionAcademica={url:'./assets/formacion/platzi.png', name:'Platzi'}
-
-
-
+  let formacion1:FormacionAcademica={url:'./assets/formacion/usac1.png',title:'Ingenieria en Sistemas', subtitle:'2019-Actualmente'}
+  let formacion2:FormacionAcademica={url:'./assets/formacion/ONE.png', title:'Oracle Next Education', subtitle:'Junio 2022-Febrero 2023'}
+  let formacion3:FormacionAcademica={url:'./assets/formacion/sigel.png', title:'Jab Academy', subtitle:'Diciembre 2022-Mayo 2023'}
+  let formacion4:FormacionAcademica={url:'./assets/formacion/platzi.png', title:'Platzi', subtitle:'Mayo 2022-Diciembre 2022'}
+  let formacion5:FormacionAcademica={url:'./assets/formacion/devtalles.jpeg', title:'{dev/talles}',subtitle:'2023-Actualmente'}
   this.formacion.push(formacion1);
   this.formacion.push(formacion2);
   this.formacion.push(formacion3);
   this.formacion.push(formacion4);
+  this.formacion.push(formacion5);
  }
-
 }

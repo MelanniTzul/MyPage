@@ -1,13 +1,11 @@
-<div class="px-1 pt-8 md:px-2 lg:px-8 xl:px-8"   id="skills" >
-  <h3 [style]="" class="text-4xl text-center pb-7 font-bold">Formacion Academica</h3>
-  <div class="  flex flex-wrap  mx-4 md:mx-5 lg:mx-8 xl:mx-8 w-full gap-7 ">
-      <mat-card class="border-round-2xl  bg-primary  flex  w-20 md:w-5 lg:w-12rem xl:w-12rem  h-12rem lg:h-9rem xl:h-9rem justify-content-center align-items-center" *ngFor="let skill of formacion">
-          <mat-card-content class="flex justify-content-center h-9rem lg:h-full xl:h-full">
-           <img class="w-12" [src]="skill.url">
-         </mat-card-content>
-          <mat-card-subtitle class="text-lg pb-3 pt-3" [style]="">
-            {{skill.name}}
-          </mat-card-subtitle>
+<div class="px-1 pt-8 md:px-2 lg:px-8 xl:px-8" id="formacion">
+  <h2 class="text-3xl text-center pb-7">Formación académica</h2>
+  <div class="flex flex-wrap  mx-4 md:mx-5 lg:mx-8 xl:mx-8 w-full gap-7">
+      <mat-card *ngFor="let dato of formacion" class="bg-primary flex w-10 md:w-5 lg:w-3 xl:w-3 h-12rem lg:h-14rem xl:h-14rem justify-content-center align-items-center">
+          <mat-card-content class="flex justify-content-center h-6rem"><img class="w-9" [src]="dato.url"></mat-card-content>
+          <mat-card-title class="text-lg pb-3 pt-3" >{{dato.title}}</mat-card-title>
+          <mat-card-subtitle class="text-color font-normal" >{{dato.subtitle}}</mat-card-subtitle>
       </mat-card>
   </div>
 </div>
+

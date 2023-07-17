@@ -24,7 +24,7 @@ export class SobremiComponent {
   y adaptarme a nuevos desafíos. Mi pasión por la tecnología y mi motivación para crecer
   profesionalmente me impulsan a buscar oportunidades de aprendizaje y desarrollo continuo.
  `;
-  nota4=`Estoy emocionado por la posibilidad de aplicar mis conocimientos y habilidades en un entorno laboral,
+  nota4=`Estoy emocionada por la posibilidad de aplicar mis conocimientos y habilidades en un entorno laboral,
   donde pueda contribuir de manera significativa y seguir desarrollándome como profesional en el campo de
   la ingeniería en sistemas.
   `;
